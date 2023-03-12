@@ -15,8 +15,9 @@ const Home = () => {
       let json = {};
       const response = await axios
         .get("/users")
-        .then((responce) => (json = responce.data));
+          .then((response) => (json = response.data));
 
+      console.log(response);
       console.log(json);
 
       if (true) {
